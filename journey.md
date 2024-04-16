@@ -17,7 +17,7 @@ then i went to apply my forensic skills in the image file.
 
 ```
 >using exiftool i got the first part of the flag in the comment section
-# flag1 : COPS{f1rst_
+## flag1 : COPS{f1rst_
 ```
 now for the second part we had to binwalk the file to extract the the data
 the command line for the same is binwalk -e filename
@@ -32,17 +32,17 @@ john-the-ripper --wordlist=pass.txt hash
 ```
 The pass.txt file can be made by simply using a loop program to store all the permutation of the password
 The final password was 
-# password = journey_1503
+## password = journey_1503
  unziping the zip file 5E70.zip and entering the right password it had an image file 
 
 ![idk](https://github.com/Wizzy2323/WannaHackme/assets/159465554/4efb27af-6418-45e2-89ee-5079e75ced06)
 
 using strings command 'stirngs imagefile' it had a base64 string hidden which was 'czNjMG5kXw==' identified with two equal signs at the end which gave the second part of the flag
-# flag2 : s3c0nd_
+## flag2 : s3c0nd_
 Now the third part of the flag was got with applying foremost on the hidden image file the that gave an output folder which had another image file which gave the third part of the flag
 
 ![The third flag file](https://github.com/Wizzy2323/WannaHackme/assets/159465554/cf36347d-ace6-4d3c-8f18-731bb59b7fed)
 
-# flag3 : th1rd_696}
+## flag3 : th1rd_696}
 Hence The final flag was
-# flag : COPS{f1rst_s3cond_th1rd_696}
+## flag : COPS{f1rst_s3cond_th1rd_696}
