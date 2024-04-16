@@ -13,23 +13,11 @@ so following the link took me to the page that looked something like that
 ![](https://github.com/Wizzy2323/WannaHackme/assets/159465554/5aa855ab-eff4-4387-8d84-04ee43104309)
 
 So first doing all the starting rituals like inspecting and looking at page source and the cookies and other stuff gave me nothing.
-And the challenge also had a zip file that contain the code of the web page
-It had a docker file that that had a code and looked something like this
-[Uploading DFROM python:3.10-slim-buster
+And the challenge also had a zip file that contain the code of the web page and also had a dockerfile which looked like
 
-RUN pip3 install flask
-COPY flag.txt /
+![Screenshot from 2024-04-17 00-35-42](https://github.com/Wizzy2323/WannaHackme/assets/159465554/ac1cb663-2997-4071-a9b1-223e2c4dc6ba)
 
-WORKDIR /app
-COPY app/* /app/
-COPY app/templates/* /app/templates/
-COPY app/themes/* /app/themes/
-
-EXPOSE 21338
-
-ENTRYPOINT ["python3", "server.py"]
-ockerfile…]()
-The line Copy flag.txt /   gave me some clue so I decided for path traversal for both the themes on the webpage I used the new link 
+The line 'Copy flag.txt /'   gave me some clue so I decided for path traversal for both the themes on the webpage I used the new link 
 ```
 http://ctf.copsiitbhu.co.in:21338/?theme=/flag.txt
 
