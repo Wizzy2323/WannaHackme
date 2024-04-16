@@ -11,7 +11,7 @@ So the first thing that comes in mind while doing the web ctf is to inspect the 
 
 ![Image of the cookie with the name user and the httponly value false](https://github.com/Wizzy2323/WannaHackme/assets/159465554/698129e2-fa5d-4f57-bb63-0e9c9a94a1f7)
 
-So then I tried to change the cookie name to Admin works for you to acess the web potral and get the flag
+So then I tried to change the cookie name to Admin and it worked for me to acess this web potral and get the flag
 
 ## Flag:  COPS{broken_auth_using_cookies_231} .
 
