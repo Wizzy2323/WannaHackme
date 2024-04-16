@@ -7,7 +7,8 @@ Whats his github username?
 
 Flag format: COPS{username}
 ```
-![This the image file](/home/triyambak/Downloads/ctf/osint)
+![This was the image file](https://github.com/Wizzy2323/WannaHackme/assets/159465554/58d48082-81fd-4693-9801-f6dc3ffa6683)
+
 using the exiftool 
 ```
 exiftool filename
